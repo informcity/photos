@@ -1,0 +1,88 @@
+/*         photo       --------------------          photo         */
+
+.wrapper{
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, .9);
+}
+.display-none{
+  display: none;
+}
+.wrapper-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.wrapper-button{
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  background-color: tomato;
+  color: azure;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: .2s;
+}
+.wrapper-button:hover{
+  background-color: azure;
+  color: tomato;
+  transform: scale(1.1);
+}
+img{
+  width: 48%;
+}
+
+/*         table       ---------------------           table        */
+
+table{
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.span-past_num{
+  font-size: 10px;
+}
+.header-row{
+  font-size: 16px;
+  background-color: aquamarine;
+}
+
+.header-row > th:nth-child(1){
+  width: 75px;
+}
+.header-row > th:nth-child(2){
+  width: 30%;
+}
+
+th, td{
+  border: 1px solid rgba(35, 31, 31, 0.238);
+  padding: 10px 0;
+  text-align: center;
+}
+
+a{
+  display: block;
+}
+a:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  color: brown;
+}
+.divv{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: brown;
+}
+
+/*         form      ---------------------           form        */
+
+input{
+  display: block;
+}
