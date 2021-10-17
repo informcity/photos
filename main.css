@@ -15,7 +15,6 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
 }
 .wrapper-button{
   position: absolute;
@@ -35,7 +34,7 @@
   transform: scale(1.1);
 }
 img{
-  width: 48%;
+  width: 35%;
 }
 
 /*         table       ---------------------           table        */
