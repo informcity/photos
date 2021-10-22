@@ -9,8 +9,11 @@
 </head>
 <body>
   <div id="wrapper" class="display-none"><button class="wrapper-button" type="button" onclick="removeWrapper()">ДО ТАБЛИЦІ</button> <div class="wrapper-flex"></div></div>
+  <p>Ціна у Хмельницькому <br> <i>(Для порівняння)</i></p>
+  <p>Ціна роздрібної торгівлі <br> <i>(25% знижки)</i></p>
+  <p>50% від ціни Хмельниц. <br> <i>(Заказ більше 2000грн)</i></p>
   
-  <form id="form-id" name="form">
+  <!-- <form id="form-id" name="form">
     <label for="GET-name">number:</label>
     <input id="GET-name" type="text" name="number" required>
     <label for="GET-name1">pastNum:</label>
@@ -24,21 +27,23 @@
     <label for="GET-name5">price50:</label>
     <input id="GET-name5" type="text" name="price50" required>
     <input type="submit" value="Save">
-  </form>
+  </form> -->
   
   <table>
     <colgroup>
       <col>
       <col>
       <col>
-      <col style="border: 1px solid yellow;" span="2">
+      <col style="background-color: rgb(173, 241, 77, 0.3)">
+      <col style="background-color: rgb(255, 133, 133, 0.3)">
+      <col style="background-color: rgb(255, 247, 131)">
     </colgroup>
     <tr class="header-row">
       <th>№</th>
       <th>Товар</th>
-      <th>Ціна у Хмельницькому <br> <i>(Для порівняння)</i> </th>
-      <th>Ціна роздрібної торгівлі <br> <i>(25% знижки)</i></th>
-      <th>50% від ціни Хмельниц. <br> <i>(Заказ більше 2000грн)</i></th>
+      <th>100% </th>
+      <th>75%</th>
+      <th>50%</th>
       <th>ФОТО</th>
     </tr>
   
