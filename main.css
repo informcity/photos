@@ -41,8 +41,6 @@ img{
 /*         table       ---------------------           table        */
 
 table{
-  width: 100%;
-  margin: 0 auto;
   border-collapse: collapse;
 }
 .span-past_num{
@@ -57,7 +55,6 @@ table{
 }
 .header-row > th:nth-child(2){
   background-color: rgb(255, 247, 131);
-  width: 60%;
 }
 .header-row > th:nth-child(3){
   background-color: rgb(255, 247, 131);
@@ -97,5 +94,10 @@ input{
 @media screen and (max-width: 700px) {
   body{
     font-size: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body{
+    font-size: 6px;
   }
 }
