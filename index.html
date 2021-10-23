@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Table</title>
+  <title>Таблиця товару</title>
   <link rel="stylesheet" href="./main.css">
 </head>
 <body>
+  <nav><span><b>Інформація за тел. 066 355 91 01</b></span> </nav>
   <div id="wrapper" class="display-none"><button class="wrapper-button" type="button" onclick="removeWrapper()">ДО ТАБЛИЦІ</button> <div class="wrapper-flex"></div></div>
-  <p>Ціна у Хмельницькому <br> <i>(Для порівняння)</i></p>
-  <p>Ціна роздрібної торгівлі <br> <i>(25% знижки)</i></p>
-  <p>50% від ціни Хмельниц. <br> <i>(Заказ більше 2000грн)</i></p>
+  <div class="content">
+    <p><b>100%</b> Оптова ціна за якою був куплений товар на ринку Хмельницького. (для порівняння)</p>
+    <p><b>75%</b> Ціна за якою продається товар. Знижка 25% від оптової ціни Хмельницького.</p>
+    <p><b>50%</b> Ціна товару для того хто купить весь товар. Половина ціни від оптової ціни Хмельницького</p>
+  </div>
   
   <!-- <form id="form-id" name="form">
     <label for="GET-name">number:</label>
@@ -36,7 +39,6 @@
       <col>
       <col style="background-color: rgb(173, 241, 77, 0.3)">
       <col style="background-color: rgb(255, 133, 133, 0.3)">
-      <col style="background-color: rgb(255, 247, 131)">
     </colgroup>
     <tr class="header-row">
       <th>№</th>
@@ -46,7 +48,6 @@
       <th>50%</th>
       <th>ФОТО</th>
     </tr>
-  
   </table>
   <script type="text/javascript" src="./main.js"></script>
   <script type="text/javascript" src="./form.js"></script>
