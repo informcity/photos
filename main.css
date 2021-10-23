@@ -91,7 +91,7 @@ input{
 
 /*         form      ---------------------           form        */
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   body{
     font-size: 10px;
   }
@@ -100,4 +100,4 @@ input{
   body{
     font-size: 6px;
   }
-}
+} */

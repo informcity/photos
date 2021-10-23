@@ -78,12 +78,16 @@ class EmpTable {
     for (let i = 0; i < arr.length; i++) {
       this.tr = document.createElement("tr");
       this.td = document.createElement("td");
-      this.td.innerHTML = `${arr[i].number} <span class="span-past_num">(${arr[i].pastNum})</span>`
-     // this.td.innerText = arr[i].number +`(${arr[i].pastNum})`;
+      //this.td.innerHTML = `${arr[i].number} <span class="span-past_num">(${arr[i].pastNum})</span>`            "communication with old accounting"
+      this.td.innerText = arr[i].number;
       this.tr.appendChild(this.td);
+
       this.td = document.createElement("td");
-      this.td.innerText = arr[i].name;
+      let arrName = arr[i].name.split('');
+      let nameRemainder = arrName.splice(arr[i].name.indexOf('\''))
+      this.td.innerHTML = `<span>${arrName.join('')}</span><span>${nameRemainder.join('')}</span>`
       this.tr.appendChild(this.td);
+      
       this.td = document.createElement("td");
       this.td.innerText = arr[i].price;
       this.tr.appendChild(this.td);
