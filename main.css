@@ -16,11 +16,8 @@ nav span{
 /*         photo       --------------------          photo         */
 .wrapper{
   display: block;
-  position: fixed;
-  top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(255, 255, 255, .9);
 }
 .display-none{
   display: none;
@@ -30,10 +27,9 @@ nav span{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
 }
 .wrapper-button{
-  position: absolute;
+  position: fixed;
   top: 3%;
   right: 3%;
   background-color: tomato;
@@ -50,7 +46,8 @@ nav span{
   transform: scale(1.1);
 }
 img{
-  width: 35%;
+  margin-top: 5px;
+  width: 47%;
 }
 
 /*         table       ---------------------           table        */
@@ -132,6 +129,15 @@ input{
 
 /*         form      ---------------------           form        */
 
+@media screen and (max-width: 900px) {
+  .wrapper-flex{
+    flex-direction: column;
+    align-items: center;
+  }
+  img{
+    width: 65%;
+  }
+}
 @media screen and (max-width: 700px) {
   body{
     font-size: 14px;

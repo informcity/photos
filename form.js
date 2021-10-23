@@ -1,12 +1,21 @@
 let wrapper = document.querySelector('#wrapper');
 let wrapFlex = document.querySelector('.wrapper-flex');
+let table = document.querySelector('table');
+let divContent = document.querySelector('.content');
+let nav = document.querySelector('nav');
 
 function removeWrapper(){
-   wrapper.className ="display-none"
+   wrapper.className = "display-none";
+   nav.classList.remove("display-none");
+   divContent.className = "content";
+   table.classList.remove("display-none");
 }
 
 document.body.addEventListener('click', (e) => {
   if (e.target.constructor.name == 'HTMLAnchorElement'){
+    divContent.className = "display-none";
+    table.className = "display-none";
+    nav.className = "display-none";
     wrapper.className = "wrapper";
     wrapFlex.innerHTML = `<img src="./img/${e.target.id}1.jpg"><img src="./img/${e.target.id}2.jpg">`
   }
