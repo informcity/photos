@@ -85,7 +85,7 @@ class EmpTable {
       this.td = document.createElement("td");
       let arrName = arr[i].name.split('');
       let nameRemainder = arrName.splice(arr[i].name.indexOf('\''))
-      this.td.innerHTML = `<span>${arrName.join('')}</span><span>${nameRemainder.join('')}</span>`
+      this.td.innerHTML = `<span class="td_name"><span>${arrName.join('')}</span><span>${nameRemainder.join('')}</span></span>`
       this.tr.appendChild(this.td);
       
       this.td = document.createElement("td");

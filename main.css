@@ -67,7 +67,16 @@ th, td{
   padding: 3px;
   text-align: left;
 }
-
+.td_name {
+  display: flex;
+  flex-direction: row;
+}
+.td_name span:nth-child(1){
+  padding-left: 7px;
+}
+.td_name span:nth-child(2){
+  padding-left: 3px;
+}
 a{
   display: block;
 }
@@ -91,13 +100,19 @@ input{
 
 /*         form      ---------------------           form        */
 
-/* @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   body{
-    font-size: 10px;
+    font-size: 12px;
   }
 }
-@media screen and (max-width: 500px) {
-  body{
-    font-size: 6px;
+@media screen and (max-width: 600px) {
+  .td_name {
+    flex-direction: column;
   }
-} */
+  .td_name span:nth-child(1){
+    padding-left: 7px;
+  }
+  .td_name span:nth-child(2){
+    padding-left: 7px;
+  }
+} 
