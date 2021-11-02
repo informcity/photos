@@ -20,6 +20,15 @@ document.body.addEventListener('click', (e) => {
     wrapFlex.innerHTML = `<img src="./img/${e.target.id}1.jpg"><img src="./img/${e.target.id}2.jpg">`
   }
 });
+document.addEventListener('hashchange', (e) => {
+  if(wrapper.classList.contains(wrapper)) {
+    e.defaultPrevented();
+    wrapper.className = "display-none";
+    nav.classList.remove("display-none");
+    divContent.className = "content";
+    table.classList.remove("display-none");
+  }
+});
 
 /*form.addEventListener('submit', (e) => {
   e.preventDefault();
