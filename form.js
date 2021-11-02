@@ -21,7 +21,7 @@ document.body.addEventListener('click', (e) => {
   }
 });
 document.addEventListener('hashchange', (e) => {
-  if(wrapper.classList.contains(wrapper)) {
+  if(wrapper.classList.contains("wrapper")) {
     e.defaultPrevented();
     wrapper.className = "display-none";
     nav.classList.remove("display-none");
