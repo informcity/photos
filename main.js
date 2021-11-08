@@ -94,7 +94,7 @@ class EmpTable {
       this.td.innerText = arr[i].price50;
       this.tr.appendChild(this.td);
       this.td = document.createElement("td");
-      this.td.innerHTML = `<a id="${arr[i].number}">ФОТО</a>`;
+      this.td.innerHTML = `<a id="${arr[i].number}" href="#photo">ФОТО</a>`;
       this.tr.appendChild(this.td);
       table.appendChild(this.tr);
     }

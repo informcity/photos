@@ -1,16 +1,3 @@
-function updateURL() {
-  if (history.pushState) {
-      var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-      var newUrl = baseUrl + '?na=photo';
-      history.pushState(null, null, newUrl);
-  }
-  else {
-      console.warn('History API не поддерживается');
-  }
-}
-
-
-
 let wrapper = document.querySelector('#wrapper');
 let wrapFlex = document.querySelector('.wrapper-flex');
 let table = document.querySelector('table');
@@ -18,6 +5,7 @@ let divContent = document.querySelector('.content');
 let nav = document.querySelector('nav');
 
 function removeWrapper(){
+  location.hash = '';
    wrapper.className = "display-none";
    nav.classList.remove("display-none");
    divContent.className = "content";
@@ -26,7 +14,6 @@ function removeWrapper(){
 
 document.body.addEventListener('click', (e) => {
   if (e.target.constructor.name == 'HTMLAnchorElement'){
-    updateURL();
     divContent.className = "display-none";
     table.className = "display-none";
     nav.className = "display-none";
@@ -46,4 +33,13 @@ document.body.addEventListener('click', (e) => {
 let sum = [ 240, 200, 170, 200, 310, 250, 290, 190, 320, 210, 75, 145, 180, 125, 160, 160, 60, 175, 80];
 console.log((arrGoods.reduce((acum, item) => acum + +item.price, 0)) + (sum.reduce((s,i)=> s+i, 0))); */
 
-
+window.addEventListener('hashchange', function(){
+  if (wrapper.classList.contains('wrapper') && location.hash == ''){
+    wrapper.className = "display-none";
+    nav.classList.remove("display-none");
+    divContent.className = "content";
+    table.classList.remove("display-none");
+  }
+  console.log('location changed!');
+  console.log(location.hash);
+})
