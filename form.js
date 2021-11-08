@@ -1,3 +1,16 @@
+function updateURL() {
+  if (history.pushState) {
+      var baseUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+      var newUrl = baseUrl + '?na=photo';
+      history.pushState(null, null, newUrl);
+  }
+  else {
+      console.warn('History API не поддерживается');
+  }
+}
+
+
+
 let wrapper = document.querySelector('#wrapper');
 let wrapFlex = document.querySelector('.wrapper-flex');
 let table = document.querySelector('table');
@@ -13,6 +26,7 @@ function removeWrapper(){
 
 document.body.addEventListener('click', (e) => {
   if (e.target.constructor.name == 'HTMLAnchorElement'){
+    updateURL();
     divContent.className = "display-none";
     table.className = "display-none";
     nav.className = "display-none";
